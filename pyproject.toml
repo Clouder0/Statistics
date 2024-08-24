@@ -1,0 +1,40 @@
+[project]
+name = "Statistics"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Clouder", email = "clouder0@outlook.com"},
+]
+dependencies = [
+    "ipykernel>=6.29.5",
+    "polars>=1.5.0",
+    "matplotlib>=3.9.2",
+    "seaborn>=0.13.2",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.poetry]
+name = "statistics"
+version = "0.1.0"
+description = ""
+authors = ["Clouder"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^6.29.5"
+polars = "^1.5.0"
+pandas = "^2.2.2"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
