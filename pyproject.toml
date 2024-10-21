@@ -1,42 +1,26 @@
 [project]
-name = "Statistics"
-version = "0.1.0"
-description = "Default template for PDM package"
+name = "statistics"
+version = "0.0.1"
+description = "Add your description here"
+readme = "README.md"
 authors = [
-    {name = "Clouder", email = "clouder0@outlook.com"},
+    { name = "Clouder0", email = "clouder0@outlook.com" }
 ]
+requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=6.29.5",
-    "polars>=1.5.0",
+    "joblib>=1.4.2",
     "matplotlib>=3.9.2",
+    "polars>=1.9.0",
+    "scikit-learn>=1.5.2",
     "seaborn>=0.13.2",
 ]
-requires-python = "==3.12.*"
-readme = "README.md"
-license = {text = "MIT"}
-
-
-[tool.pdm]
-distribution = false
-
-[tool.poetry]
-name = "statistics"
-version = "0.1.0"
-description = ""
-authors = ["Clouder"]
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-ipykernel = "^6.29.5"
-polars = "^1.5.0"
-pandas = "^2.2.2"
-matplotlib = "^3.9.2"
-seaborn = "^0.13.2"
-numpy = "^2.1.0"
-scipy = "^1.14.1"
-
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.7.0",
+]
